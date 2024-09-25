@@ -34,14 +34,7 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
-				"ms-python.vscode-pylance",
-        "github.vscode-github-actions",
-        "codezombiech.gitignore",
-        "michelemelluso.gitignore",
-        "ritwickdey.liveserver",
-        "yzhang.markdown-all-in-one",
-        "pkief.material-icon-theme",
-        "esbenp.prettier-vscode"
+				"ms-python.vscode-pylance"
 			]
 		}
 	},

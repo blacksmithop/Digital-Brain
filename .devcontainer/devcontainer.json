@@ -1,4 +1,18 @@
 {
 	"name": "Python 3",
-	"image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye"
+	"image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"djlynn03.add-to-git-ignore",
+				"ms-python.python",
+				"yzhang.markdown-all-in-one",
+				"ms-python.isort",
+				"ritwickdey.LiveServer",
+				"ecmel.vscode-html-css",
+				"codezombiech.gitignore",
+				"mikoz.black-py"
+			]
+		}
+	}
 }

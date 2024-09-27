@@ -5,9 +5,13 @@ import requests
 from git import Repo
 
 
-@click.command()
+@click.group()
+def download():
+    ...
+    
+@download.command()
 @click.option("--username", prompt="Github username", help="Your Github username")
-def download_github_data(username: str):
+def github(username: str):
     GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
     KNOWLEDGE_DIR = "./knowledge"
     GITHUB_DIR = "github"
@@ -85,4 +89,4 @@ def download_github_data(username: str):
         Repo.clone_from(url=clone_url, to_path=repo_name, depth=1)
 
 if __name__ == "__main__":
-    download_github_data()
+    download()

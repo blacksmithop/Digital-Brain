@@ -1,6 +1,9 @@
 {
-	"name": "Python 3",
-	"image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+	"name": "Digital Brain (Python 3)",
+	"build": {
+	        "dockerfile": "Dockerfile",
+	        "context": ".."
+    	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
